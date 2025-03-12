@@ -95,7 +95,7 @@ body {
 
 p.age {
   font-size: 17px;
-  align-self: flex-end;
+  align-self: center;
   font-weight: var(--fw-normal);
   color: var(--clr-desaturated-dark-blue);
 }
