@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@800,116&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+:root {
+  --clr-dark-cyan: hsl(185, 75%, 39%);
+  --clr-desaturated-dark-blue: hsl(229, 23%, 23%);
+  --clr-dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --clr-dark-gray: hsl(0, 0%, 59%);
+
+  --fs--name-stats: 18px;
+
+  --fw-normal: 400;
+  --fw-bold: 800;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--clr-dark-cyan);
+  position: relative;
+}
+
+.background-images {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  opacity: 80%;
+}
+
+.top {
+  top: -130px;
+  left: -130px;
+}
+
+.bottom {
+  bottom: -130px;
+  right: -130px;
+}
+
+.card {
+  margin-inline: auto;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  width: min(90%, 400px);
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.background-card {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 1rem;
+}
+
+.content {
+  z-index: 1;
+  margin-top: -3.5rem;
+}
+
+.name {
+  font-size: var(--fs--name-stats);
+  font-weight: var(--fw-bold);
+  color: var(--clr-desaturated-dark-blue);
+}
+
+.name-age {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  margin-bottom: 0.4rem;
+}
+
+p.age {
+  font-size: 17px;
+  align-self: flex-end;
+  font-weight: var(--fw-normal);
+  color: var(--clr-desaturated-dark-blue);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.location {
+  font-size: 15px;
+  color: var(--clr-dark-grayish-blue);
+  margin-bottom: 1rem;
+}
+
+div.stats {
+  border-top: 1px solid gainsboro;
+  min-width: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+ul li {
+  color: var(--clr-desaturated-dark-blue);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs--name-stats);
+}
+
+ul li span {
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--clr-dark-grayish-blue);
+}
+
+@media (min-width: 500px) {
+  .background-images {
+    width: 75%;
+  }
+}
+@media (min-width: 700px) {
+  .background-images {
+    width: 65%;
+  }
+}
+
+@media (min-width: 920px) {
+  .background-images {
+    width: 55%;
+  }
+}
+
+
+@media (min-width: 1200px) {
+    .background-images {
+      width: 50%;
+
+    }
+    .top {
+        top: -300px;
+        left: -100px;
+      }
+
+      .bottom {
+        bottom: -300px;
+        right: -100px;
+
+  }
+}
